@@ -1,0 +1,15 @@
+[Unit]
+Description=blat-log
+Requires=confd.service
+After=confd.service
+
+[Service]
+StandardOutput=journal+console
+StandardError=journal+console
+WorkingDirectory=/usr/src/app
+EnvironmentFile=/usr/src/app/config/env
+ExecStart=/usr/src/app/bin/blat-log
+Restart=always
+
+[Install]
+WantedBy=basic.target

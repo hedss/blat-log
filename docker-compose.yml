@@ -1,0 +1,44 @@
+version: '2.1'
+services:
+    blat-log:
+        build: ./src/blat-log
+        cap_add:
+            - SYS_RESOURCE
+            - SYS_ADMIN
+        security_opt:
+            - 'apparmor:unconfined'
+        tmpfs:
+            - /run
+            - /sys/fs/cgroup
+        environment:
+            CONFD_BACKEND: ENV
+            CHUNK_SIZE: 32768
+            TIME_PERIOD: 250
+    blat-log2:
+        build: ./src/blat-log
+        cap_add:
+            - SYS_RESOURCE
+            - SYS_ADMIN
+        security_opt:
+            - 'apparmor:unconfined'
+        tmpfs:
+            - /run
+            - /sys/fs/cgroup
+        environment:
+            CONFD_BACKEND: ENV
+            CHUNK_SIZE: 32768
+            TIME_PERIOD: 250
+    blat-log3:
+        build: ./src/blat-log
+        cap_add:
+            - SYS_RESOURCE
+            - SYS_ADMIN
+        security_opt:
+            - 'apparmor:unconfined'
+        tmpfs:
+            - /run
+            - /sys/fs/cgroup
+        environment:
+            CONFD_BACKEND: ENV
+            CHUNK_SIZE: 32768
+            TIME_PERIOD: 250

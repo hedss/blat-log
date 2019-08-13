@@ -1,0 +1,8 @@
+{
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "author": "Heds Simons <heds@balena.io>",
+  "private": true
+}
