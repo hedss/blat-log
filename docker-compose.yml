@@ -12,8 +12,8 @@ services:
             - /sys/fs/cgroup
         environment:
             CONFD_BACKEND: ENV
-            CHUNK_SIZE: 32768
-            TIME_PERIOD: 250
+            CHUNK_SIZE: 10
+            TIME_PERIOD: 1000
     blat-log2:
         build: ./src/blat-log
         cap_add:
@@ -26,8 +26,8 @@ services:
             - /sys/fs/cgroup
         environment:
             CONFD_BACKEND: ENV
-            CHUNK_SIZE: 32768
-            TIME_PERIOD: 250
+            CHUNK_SIZE: 10
+            TIME_PERIOD: 1000
     blat-log3:
         build: ./src/blat-log
         cap_add:
@@ -40,5 +40,243 @@ services:
             - /sys/fs/cgroup
         environment:
             CONFD_BACKEND: ENV
-            CHUNK_SIZE: 32768
-            TIME_PERIOD: 250
+            CHUNK_SIZE: 10
+            TIME_PERIOD: 1000
+    blat-log4:
+        build: ./src/blat-log
+        cap_add:
+            - SYS_RESOURCE
+            - SYS_ADMIN
+        security_opt:
+            - 'apparmor:unconfined'
+        tmpfs:
+            - /run
+            - /sys/fs/cgroup
+        environment:
+            CONFD_BACKEND: ENV
+            CHUNK_SIZE: 10
+            TIME_PERIOD: 1000
+    blat-log5:
+        build: ./src/blat-log
+        cap_add:
+            - SYS_RESOURCE
+            - SYS_ADMIN
+        security_opt:
+            - 'apparmor:unconfined'
+        tmpfs:
+            - /run
+            - /sys/fs/cgroup
+        environment:
+            CONFD_BACKEND: ENV
+            CHUNK_SIZE: 10
+            TIME_PERIOD: 1000
+    blat-log6:
+        build: ./src/blat-log
+        cap_add:
+            - SYS_RESOURCE
+            - SYS_ADMIN
+        security_opt:
+            - 'apparmor:unconfined'
+        tmpfs:
+            - /run
+            - /sys/fs/cgroup
+        environment:
+            CONFD_BACKEND: ENV
+            CHUNK_SIZE: 10
+            TIME_PERIOD: 1000
+    blat-log7:
+        build: ./src/blat-log
+        cap_add:
+            - SYS_RESOURCE
+            - SYS_ADMIN
+        security_opt:
+            - 'apparmor:unconfined'
+        tmpfs:
+            - /run
+            - /sys/fs/cgroup
+        environment:
+            CONFD_BACKEND: ENV
+            CHUNK_SIZE: 10
+            TIME_PERIOD: 1000
+    blat-log8:
+        build: ./src/blat-log
+        cap_add:
+            - SYS_RESOURCE
+            - SYS_ADMIN
+        security_opt:
+            - 'apparmor:unconfined'
+        tmpfs:
+            - /run
+            - /sys/fs/cgroup
+        environment:
+            CONFD_BACKEND: ENV
+            CHUNK_SIZE: 10
+            TIME_PERIOD: 1000
+    blat-log9:
+        build: ./src/blat-log
+        cap_add:
+            - SYS_RESOURCE
+            - SYS_ADMIN
+        security_opt:
+            - 'apparmor:unconfined'
+        tmpfs:
+            - /run
+            - /sys/fs/cgroup
+        environment:
+            CONFD_BACKEND: ENV
+            CHUNK_SIZE: 10
+            TIME_PERIOD: 1000
+    blat-log10:
+        build: ./src/blat-log
+        cap_add:
+            - SYS_RESOURCE
+            - SYS_ADMIN
+        security_opt:
+            - 'apparmor:unconfined'
+        tmpfs:
+            - /run
+            - /sys/fs/cgroup
+        environment:
+            CONFD_BACKEND: ENV
+            CHUNK_SIZE: 10
+            TIME_PERIOD: 1000
+    blat-log11:
+        build: ./src/blat-log
+        cap_add:
+            - SYS_RESOURCE
+            - SYS_ADMIN
+        security_opt:
+            - 'apparmor:unconfined'
+        tmpfs:
+            - /run
+            - /sys/fs/cgroup
+        environment:
+            CONFD_BACKEND: ENV
+            CHUNK_SIZE: 10
+            TIME_PERIOD: 1000
+    blat-log12:
+        build: ./src/blat-log
+        cap_add:
+            - SYS_RESOURCE
+            - SYS_ADMIN
+        security_opt:
+            - 'apparmor:unconfined'
+        tmpfs:
+            - /run
+            - /sys/fs/cgroup
+        environment:
+            CONFD_BACKEND: ENV
+            CHUNK_SIZE: 10
+            TIME_PERIOD: 1000
+    blat-log13:
+        build: ./src/blat-log
+        cap_add:
+            - SYS_RESOURCE
+            - SYS_ADMIN
+        security_opt:
+            - 'apparmor:unconfined'
+        tmpfs:
+            - /run
+            - /sys/fs/cgroup
+        environment:
+            CONFD_BACKEND: ENV
+            CHUNK_SIZE: 10
+            TIME_PERIOD: 1000
+    blat-log14:
+        build: ./src/blat-log
+        cap_add:
+            - SYS_RESOURCE
+            - SYS_ADMIN
+        security_opt:
+            - 'apparmor:unconfined'
+        tmpfs:
+            - /run
+            - /sys/fs/cgroup
+        environment:
+            CONFD_BACKEND: ENV
+            CHUNK_SIZE: 10
+            TIME_PERIOD: 1000
+    blat-log15:
+        build: ./src/blat-log
+        cap_add:
+            - SYS_RESOURCE
+            - SYS_ADMIN
+        security_opt:
+            - 'apparmor:unconfined'
+        tmpfs:
+            - /run
+            - /sys/fs/cgroup
+        environment:
+            CONFD_BACKEND: ENV
+            CHUNK_SIZE: 10
+            TIME_PERIOD: 1000
+#    blat-log16:
+#        build: ./src/blat-log
+#        cap_add:
+#            - SYS_RESOURCE
+#            - SYS_ADMIN
+#        security_opt:
+#            - 'apparmor:unconfined'
+#        tmpfs:
+#            - /run
+#            - /sys/fs/cgroup
+#        environment:
+#            CONFD_BACKEND: ENV
+#            CHUNK_SIZE: 10
+#            TIME_PERIOD: 1000
+#    blat-log17:
+#        build: ./src/blat-log
+#        cap_add:
+#            - SYS_RESOURCE
+#            - SYS_ADMIN
+#        security_opt:
+#            - 'apparmor:unconfined'
+#        tmpfs:
+#            - /run
+#            - /sys/fs/cgroup
+#        environment:
+#            CONFD_BACKEND: ENV
+#            CHUNK_SIZE: 10
+#            TIME_PERIOD: 1000
+#    blat-log18:
+#        build: ./src/blat-log
+#        cap_add:
+#            - SYS_RESOURCE
+#            - SYS_ADMIN
+#        security_opt:
+#            - 'apparmor:unconfined'
+#        tmpfs:
+#            - /run
+#            - /sys/fs/cgroup
+#        environment:
+#            CONFD_BACKEND: ENV
+#            CHUNK_SIZE: 10
+#            TIME_PERIOD: 1000
+#    blat-log19:
+#        build: ./src/blat-log
+#        cap_add:
+#            - SYS_RESOURCE
+#            - SYS_ADMIN
+#        security_opt:
+#            - 'apparmor:unconfined'
+#        tmpfs:
+#            - /run
+#            - /sys/fs/cgroup
+#        environment:
+#            CONFD_BACKEND: ENV
+#            CHUNK_SIZE: 10
+#            TIME_PERIOD: 1000
+#    blat-log20:
+#        build: ./src/blat-log
+#        cap_add:
+#            - SYS_RESOURCE
+#            - SYS_ADMIN
+#        security_opt:
+#            - 'apparmor:unconfined'
+#        tmpfs:
+#            - /run
+#            - /sys/fs/cgroup
+#        environment:
+#            CONFD_BACKEND: ENV
+#            CHUNK_SIZE: 10
+#            TIME_PERIOD: 1000
